@@ -1,4 +1,4 @@
-package AulaPratica2;
+package ProjetosProprios1;
 
 public class ClientePJ extends Cliente {
 
@@ -19,5 +19,10 @@ public class ClientePJ extends Cliente {
      //Crio o método set para definir o cnpj por outra classe
     public void setCNPJ(String cnpj){
         this.cnpj = cnpj;
+    }
+
+    //Uso o conceito de Polimorfismo para obter um código limpo, pois herda 'nome' e 'endereço' da classe pai 'Cliente'
+    public String toString(){
+        return super.toString() + " CNPJ: " + cnpj;
     }
 }
