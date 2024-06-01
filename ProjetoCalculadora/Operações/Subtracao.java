@@ -1,10 +1,12 @@
 package ProjetoCalculadora.Operações;
 
+import ProjetoCalculadora.Constants.SubtConstants;
+
 public class Subtracao extends CalculatingBase {
 
     public Subtracao(int oper) {
         super(oper);
-        double resultado = this.numero1 - this.numero2;
-        System.out.println("Resultado da Subtração: " + resultado);
+        double resultado = numero1 - numero2;
+        System.out.println(SubtConstants.kStr + resultado);
     }
 }

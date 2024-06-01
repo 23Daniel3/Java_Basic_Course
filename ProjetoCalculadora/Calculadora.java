@@ -2,6 +2,9 @@ package ProjetoCalculadora;
 
 import java.util.Scanner;
 
+import ProjetoCalculadora.Constants.CalcConstants;
+import ProjetoCalculadora.Constants.Kinvalid;
+import ProjetoCalculadora.Constants.kObey;
 import ProjetoCalculadora.Operações.Divisao;
 import ProjetoCalculadora.Operações.Multiplicacao;
 import ProjetoCalculadora.Operações.Potencia;
@@ -26,15 +29,7 @@ public class Calculadora {
     }
     
     public static int getOperação(){
-        System.out.println("Digite o número da operação desejada:\n"
-            + "n 1 para Soma\n" 
-            + "n 2 para Subtração\n"
-            + "n 3 para Multiplicação\n"
-            + "n 4 para Divisão\n"
-            + "n 5 para Potência\n"
-            + "n 6 para Raiz Quadrada\n"
-            + "n 7 para Raiz cubica\n"
-        );
+        System.out.println(CalcConstants.kStrOperacao);
         return scan.nextInt();
     }
 
@@ -48,22 +43,22 @@ public class Calculadora {
         } else if (operação == 4){
             new Divisao(4);
         } else if (operação == 5){
-            System.out.println("Atenção!! Digite primeiro o numero e depois a potência");
+            System.out.println(CalcConstants.strPot);
             new Potencia(5);
         } else if (operação == 6){
-            System.out.println("Atenção!! Você receberá o radicando 'arredondado' ao índice 2");
+            System.out.println(CalcConstants.strRQ);
             new RaizQuadrada(6); 
         } else if (operação == 7){
-            System.out.println("Atenção!! Você receberá o radicando 'arredondado' ao índice 3");
+            System.out.println(CalcConstants.strRC);
             new RaizCubica(7);
         } else {
-            System.out.println("Operação Invalida");
+            System.out.println(Kinvalid.invOper);
             continueCalculating();
         }
     }
 
     private static boolean continueCalculating(){
-        System.out.println("Deseja continuar calculando? digite 'sim' para continuar");
+        System.out.println(kObey.kCont);
         String resposta = scan.next();
         return resposta.equalsIgnoreCase("sim");
     }
