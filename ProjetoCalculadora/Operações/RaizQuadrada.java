@@ -2,8 +2,9 @@ package ProjetoCalculadora.Operações;
 
 public class RaizQuadrada extends CalculatingBase {
 
-    public RaizQuadrada(){
+    public RaizQuadrada(int oper){
+        super(oper);
         double result = Math.sqrt(numero1);
-        System.out.println("O resultado é: " + result);
+        System.out.println("A Raiz quadrada é: " + result);
     }
 }

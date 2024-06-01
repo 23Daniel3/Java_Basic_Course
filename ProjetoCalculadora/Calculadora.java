@@ -25,14 +25,14 @@ public class Calculadora {
         }
     }
     
-    private static int getOperação(){
+    public static int getOperação(){
         System.out.println("Digite o número da operação desejada:\n"
             + "n 1 para Soma\n" 
             + "n 2 para Subtração\n"
             + "n 3 para Multiplicação\n"
             + "n 4 para Divisão\n"
-            + "n 5 para Raiz Quadrada\n"
-            + "n 6 para Potência\n"
+            + "n 5 para Potência\n"
+            + "n 6 para Raiz Quadrada\n"
             + "n 7 para Raiz cubica\n"
         );
         return scan.nextInt();
@@ -40,22 +40,22 @@ public class Calculadora {
 
     private static void execute(int operação){
         if (operação == 1){
-            new Soma();
+            new Soma(1);
         } else if (operação == 2){
-            new Subtracao();
+            new Subtracao(2);
         } else if (operação == 3){
-            new Multiplicacao();
+            new Multiplicacao(3);
         } else if (operação == 4){
-            new Divisao();
+            new Divisao(4);
         } else if (operação == 5){
-            System.out.println("Atenção!! Você receberá o radicando 'arredondado' ao índice 2");
-            new RaizQuadrada(); 
-        } else if (operação == 6){
             System.out.println("Atenção!! Digite primeiro o numero e depois a potência");
-            new Potencia();
+            new Potencia(5);
+        } else if (operação == 6){
+            System.out.println("Atenção!! Você receberá o radicando 'arredondado' ao índice 2");
+            new RaizQuadrada(6); 
         } else if (operação == 7){
             System.out.println("Atenção!! Você receberá o radicando 'arredondado' ao índice 3");
-            new RaizCubica();
+            new RaizCubica(7);
         } else {
             System.out.println("Operação Invalida");
             continueCalculating();

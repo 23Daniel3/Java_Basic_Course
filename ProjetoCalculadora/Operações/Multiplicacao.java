@@ -2,10 +2,8 @@ package ProjetoCalculadora.Operações;
 
 public class Multiplicacao extends CalculatingBase{
 
-    public Multiplicacao(){
-        System.out.println("Digite o segundo número: ");
-        this.numero2 = scan.nextDouble();
-        
+    public Multiplicacao(int oper){
+        super(oper);        
         double result = numero1 * numero2;
         System.out.println("O resultado é " + result);
     }
