@@ -5,6 +5,7 @@ import java.util.Scanner;
 import ProjetoCalculadora.Operações.Divisao;
 import ProjetoCalculadora.Operações.Multiplicacao;
 import ProjetoCalculadora.Operações.Potencia;
+import ProjetoCalculadora.Operações.RaizCubica;
 import ProjetoCalculadora.Operações.RaizQuadrada;
 import ProjetoCalculadora.Operações.Soma;
 import ProjetoCalculadora.Operações.Subtracao;
@@ -32,6 +33,7 @@ public class Calculadora {
             + "n 4 para Divisão\n"
             + "n 5 para Raiz Quadrada\n"
             + "n 6 para Potência\n"
+            + "n 7 para Raiz cubica\n"
         );
         return scan.nextInt();
     }
@@ -49,8 +51,11 @@ public class Calculadora {
             System.out.println("Atenção!! Você receberá o radicando 'arredondado' ao índice 2");
             new RaizQuadrada(); 
         } else if (operação == 6){
-            System.out.println("Atenção! Digite primeiro o numero e depois a potência");
+            System.out.println("Atenção!! Digite primeiro o numero e depois a potência");
             new Potencia();
+        } else if (operação == 7){
+            System.out.println("Atenção!! Você receberá o radicando 'arredondado' ao índice 3");
+            new RaizCubica();
         } else {
             System.out.println("Operação Invalida");
             continueCalculating();
