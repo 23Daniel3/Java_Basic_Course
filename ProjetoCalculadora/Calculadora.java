@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 import ProjetoCalculadora.Constants.CalcConstants;
 import ProjetoCalculadora.Constants.Kinvalid;
+import ProjetoCalculadora.Constants.PercConstants;
 import ProjetoCalculadora.Constants.kObey;
 
 import ProjetoCalculadora.Operações.Divisao;
 import ProjetoCalculadora.Operações.Multiplicacao;
+import ProjetoCalculadora.Operações.Percentage;
 import ProjetoCalculadora.Operações.Potencia;
 import ProjetoCalculadora.Operações.RaizCubica;
 import ProjetoCalculadora.Operações.RaizQuadrada;
@@ -73,6 +75,9 @@ public class Calculadora {
             System.out.println(CalcConstants.strRC);
             new RaizCubica(firstNumber, 7);
             break;
+        case "%":
+            System.out.println(PercConstants.kFirst);
+            new Percentage(firstNumber, 8);
         default:
             System.out.println(Kinvalid.invOper);
             continueCalculating();
