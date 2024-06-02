@@ -41,6 +41,12 @@ public class Calculadora {
         return scan.next();
     }
 
+    private static boolean continueCalculating(){
+        System.out.println(kObey.kCont);
+        String resposta = scan.next();
+        return resposta.equalsIgnoreCase("sim");
+    }
+
     private static void execute(String operação){
        switch (operação) {
         case "+":
@@ -72,11 +78,5 @@ public class Calculadora {
             continueCalculating();
             break;
        }
-    }
-
-    private static boolean continueCalculating(){
-        System.out.println(kObey.kCont);
-        String resposta = scan.next();
-        return resposta.equalsIgnoreCase("sim");
     }
 }
