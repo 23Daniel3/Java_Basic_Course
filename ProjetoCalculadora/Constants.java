@@ -102,8 +102,8 @@ public final class Constants {
                 + "(*) para Multiplicação\n"
                 + "(/) para Divisão\n"
                 + "(^) para Potência\n"
-                + "(²) para Raiz Quadrada\n"
-                + "(³) para Raiz cubica\n"
+                + "(@) para Raiz Quadrada\n"
+                + "(#) para Raiz cubica\n"
                 + "(%) para descobrir porcentagem\n";
 
         /**

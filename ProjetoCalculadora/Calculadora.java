@@ -94,11 +94,11 @@ public class Calculadora {
                 System.out.println(CalcConstants.strPot);
                 new Potencia(firstNumber, 5);
                 break;
-            case "²":
+            case "@":
                 System.out.println(CalcConstants.strRQ);
                 new RaizQuadrada(firstNumber, 6);
                 break;
-            case "³":
+            case "#":
                 System.out.println(CalcConstants.strRC);
                 new RaizCubica(firstNumber, 7);
                 break;
