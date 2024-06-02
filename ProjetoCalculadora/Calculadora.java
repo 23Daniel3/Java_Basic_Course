@@ -42,27 +42,36 @@ public class Calculadora {
     }
 
     private static void execute(String operação){
-        if (operação.equals("+")){
-            new Soma(firstNumber, 1);
-        } else if (operação.equals("-")){
+       switch (operação) {
+        case "+":
+        new Soma(firstNumber, 1);
+            break;
+        case "-":
             new Subtracao(firstNumber, 2);
-        } else if (operação.equals("*")){
+            break;
+        case "*":
             new Multiplicacao(firstNumber, 3);
-        } else if (operação.equals("/")){
+            break;
+        case "/":
             new Divisao(firstNumber, 4);
-        } else if (operação.equals("^")){
+            break;
+        case "^":
             System.out.println(CalcConstants.strPot);
             new Potencia(firstNumber, 5);
-        } else if (operação.equals("²")){
+            break;
+        case "²":
             System.out.println(CalcConstants.strRQ);
-            new RaizQuadrada(firstNumber, 6); 
-        } else if (operação.equals("³")){
+            new RaizQuadrada(firstNumber, 6);
+            break;
+        case "³":
             System.out.println(CalcConstants.strRC);
             new RaizCubica(firstNumber, 7);
-        } else {
+            break;
+        default:
             System.out.println(Kinvalid.invOper);
             continueCalculating();
-        }
+            break;
+       }
     }
 
     private static boolean continueCalculating(){
