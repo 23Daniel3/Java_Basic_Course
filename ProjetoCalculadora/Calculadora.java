@@ -18,7 +18,7 @@ import ProjetoCalculadora.Operações.Subtracao;
 
 public class Calculadora {
 
-    static Scanner scan = new Scanner(System.in);
+    static Scanner input = new Scanner(System.in);
     private static double firstNumber;
 
     public static void main(String[] args){
@@ -35,17 +35,17 @@ public class Calculadora {
 
     public static double getFirstNumber(){
         System.out.println(kObey.nmrDes);        
-        return scan.nextDouble();
+        return input.nextDouble();
     }
     
     public static String getOperação(){
         System.out.println(CalcConstants.kStrOperacao);
-        return scan.next();
+        return input.next();
     }
 
     private static boolean continueCalculating(){
         System.out.println(kObey.kCont);
-        String resposta = scan.next();
+        String resposta = input.next();
         return resposta.equalsIgnoreCase("sim");
     }
 
