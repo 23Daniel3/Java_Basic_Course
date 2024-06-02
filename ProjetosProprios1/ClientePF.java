@@ -24,4 +24,7 @@ public class ClientePF extends Cliente{
     public String toString(){
         return super.toString() + "CPF: " + cpf;
     }
-}
+}  //javadoc -classpath . -d doc *.java
+    //cd "C:\Users\danie\OneDrive\Área de Trabalho\Programacao\Java_basic_course\JavacourseUdemy\ProjetoCalculadora\"
+// javadoc -classpath \Users\danie\OneDrive\Área de Trabalho\Programação\Java_basic_course\Java course Udemy\ProjetoCalculadora\ -sourcepath Users\danie\OneDrive\Área de Trabalho\Programação\Java_basic_course\Java course Udemy\ProjetoCalculadora\
+//cd "C:\Users\danie\OneDrive\Área de Trabalho\Programacao\Java_basic_course\JavacourseUdemy\ProjetoCalculadora\Operacoes\"
