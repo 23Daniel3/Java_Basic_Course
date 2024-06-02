@@ -1,0 +1,85 @@
+package ProjetosProprios1;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
+public class CalculadoraFX extends Application {
+
+    private TextField display;
+    private double num1, num2, result;
+    private char operator;
+
+    @Override
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("Calculadora");
+
+        display = new TextField();
+        display.setEditable(false);
+
+        GridPane grid = new GridPane();
+        grid.add(display, 0, 0, 4, 1);
+
+        String[] buttons = {
+            "7", "8", "9", "/",
+            "4", "5", "6", "*",
+            "1", "2", "3", "-",
+            "0", ".", "=", "+"
+        };
+
+        int row = 1;
+        int col = 0;
+
+        for (String text : buttons) {
+            Button button = new Button(text);
+            button.setOnAction(e -> handleButtonClick(text));
+            grid.add(button, col, row);
+            col++;
+            if (col == 4) {
+                col = 0;
+                row++;
+            }
+        }
+
+        Scene scene = new Scene(grid, 300, 400);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    private void handleButtonClick(String text) {
+        if (text.matches("[0-9.]")) {
+            display.appendText(text);
+        } else if (text.equals("=")) {
+            num2 = Double.parseDouble(display.getText());
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+            }
+            display.setText("" + result);
+            num1 = result;
+        } else {
+            if (!display.getText().isEmpty()) {
+                num1 = Double.parseDouble(display.getText());
+                operator = text.charAt(0);
+                display.clear();
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}

@@ -4,8 +4,11 @@ import ProjetoCalculadora.Constants.SubtConstants;
 
 public class Subtracao extends CalculatingBase {
 
-    public Subtracao(int oper) {
+    double numero1;
+
+    public Subtracao(double firstNumber, int oper) {
         super(oper);
+        this.numero1 = firstNumber;
         double resultado = numero1 - numero2;
         System.out.println(SubtConstants.kStr + resultado);
     }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 import ProjetoCalculadora.Constants.CalcConstants;
 import ProjetoCalculadora.Constants.Kinvalid;
 import ProjetoCalculadora.Constants.kObey;
+
 import ProjetoCalculadora.Operações.Divisao;
 import ProjetoCalculadora.Operações.Multiplicacao;
 import ProjetoCalculadora.Operações.Potencia;
@@ -16,16 +17,23 @@ import ProjetoCalculadora.Operações.Subtracao;
 public class Calculadora {
 
     static Scanner scan = new Scanner(System.in);
+    private static double firstNumber;
 
     public static void main(String[] args){
 
         boolean continuar = true;
 
         while (continuar){
+            firstNumber = getFirstNumber();
             int operação = getOperação();
             execute(operação);
             continuar = continueCalculating();
         }
+    }
+
+    public static double getFirstNumber(){
+        System.out.println(kObey.nmrDes);        
+        return scan.nextDouble();
     }
     
     public static int getOperação(){
@@ -35,22 +43,22 @@ public class Calculadora {
 
     private static void execute(int operação){
         if (operação == 1){
-            new Soma(1);
+            new Soma(firstNumber, 1);
         } else if (operação == 2){
-            new Subtracao(2);
+            new Subtracao(getFirstNumber(), 2);
         } else if (operação == 3){
-            new Multiplicacao(3);
+            new Multiplicacao(getFirstNumber(), 3);
         } else if (operação == 4){
-            new Divisao(4);
+            new Divisao(getFirstNumber(), 4);
         } else if (operação == 5){
             System.out.println(CalcConstants.strPot);
-            new Potencia(5);
+            new Potencia(getFirstNumber(), 5);
         } else if (operação == 6){
             System.out.println(CalcConstants.strRQ);
-            new RaizQuadrada(6); 
+            new RaizQuadrada(getFirstNumber(), 6); 
         } else if (operação == 7){
             System.out.println(CalcConstants.strRC);
-            new RaizCubica(7);
+            new RaizCubica(getFirstNumber(), 7);
         } else {
             System.out.println(Kinvalid.invOper);
             continueCalculating();
