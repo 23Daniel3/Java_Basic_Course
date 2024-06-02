@@ -31,14 +31,14 @@ public final class Constants {
     }
 
     public static final class CalcConstants {
-        public static final String kStrOperacao = "Digite o número da operação desejada:\n"
-            + "n 1 para Soma\n" 
-            + "n 2 para Subtração\n"
-            + "n 3 para Multiplicação\n"
-            + "n 4 para Divisão\n"
-            + "n 5 para Potência\n"
-            + "n 6 para Raiz Quadrada\n"
-            + "n 7 para Raiz cubica\n";
+        public static final String kStrOperacao = "Digite a operação desejada:\n"
+            + "(+) para Soma\n" 
+            + "(-) para Subtração\n"
+            + "(*) para Multiplicação\n"
+            + "(/) para Divisão\n"
+            + "(^) para Potência\n"
+            + "(²) para Raiz Quadrada\n"
+            + "(³) para Raiz cubica\n";
 
         public static final String strPot = "Atenção!! Digite primeiro o numero e depois a potência";
         public static final String strRQ = "Atenção!! Você receberá o radicando 'arredondado' ao índice 2";

@@ -25,7 +25,7 @@ public class Calculadora {
 
         while (continuar){
             firstNumber = getFirstNumber();
-            int operação = getOperação();
+            String operação = getOperação();
             execute(operação);
             continuar = continueCalculating();
         }
@@ -36,27 +36,27 @@ public class Calculadora {
         return scan.nextDouble();
     }
     
-    public static int getOperação(){
+    public static String getOperação(){
         System.out.println(CalcConstants.kStrOperacao);
-        return scan.nextInt();
+        return scan.next();
     }
 
-    private static void execute(int operação){
-        if (operação == 1){
+    private static void execute(String operação){
+        if (operação.equals("+")){
             new Soma(firstNumber, 1);
-        } else if (operação == 2){
+        } else if (operação.equals("-")){
             new Subtracao(firstNumber, 2);
-        } else if (operação == 3){
+        } else if (operação.equals("*")){
             new Multiplicacao(firstNumber, 3);
-        } else if (operação == 4){
+        } else if (operação.equals("/")){
             new Divisao(firstNumber, 4);
-        } else if (operação == 5){
+        } else if (operação.equals("^")){
             System.out.println(CalcConstants.strPot);
             new Potencia(firstNumber, 5);
-        } else if (operação == 6){
+        } else if (operação.equals("²")){
             System.out.println(CalcConstants.strRQ);
             new RaizQuadrada(firstNumber, 6); 
-        } else if (operação == 7){
+        } else if (operação.equals("³")){
             System.out.println(CalcConstants.strRC);
             new RaizCubica(firstNumber, 7);
         } else {
