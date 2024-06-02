@@ -1,6 +1,6 @@
 package ProjetoCalculadora.Operações;
 
-import ProjetoCalculadora.Constants.RQConstants;
+import ProjetoCalculadora.Constants.RCConstants;
 
 public class RaizCubica extends CalculatingBase{
 
@@ -10,6 +10,6 @@ public class RaizCubica extends CalculatingBase{
         super(oper);
         this.numero1 = firstNumber;
         double result = Math.cbrt(numero1);
-        System.out.println(RQConstants.kStr + result);
+        System.out.println(RCConstants.kStr + result);
     }
 }

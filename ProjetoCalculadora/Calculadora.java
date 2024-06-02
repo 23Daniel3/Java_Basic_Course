@@ -45,20 +45,20 @@ public class Calculadora {
         if (operação == 1){
             new Soma(firstNumber, 1);
         } else if (operação == 2){
-            new Subtracao(getFirstNumber(), 2);
+            new Subtracao(firstNumber, 2);
         } else if (operação == 3){
-            new Multiplicacao(getFirstNumber(), 3);
+            new Multiplicacao(firstNumber, 3);
         } else if (operação == 4){
-            new Divisao(getFirstNumber(), 4);
+            new Divisao(firstNumber, 4);
         } else if (operação == 5){
             System.out.println(CalcConstants.strPot);
-            new Potencia(getFirstNumber(), 5);
+            new Potencia(firstNumber, 5);
         } else if (operação == 6){
             System.out.println(CalcConstants.strRQ);
-            new RaizQuadrada(getFirstNumber(), 6); 
+            new RaizQuadrada(firstNumber, 6); 
         } else if (operação == 7){
             System.out.println(CalcConstants.strRC);
-            new RaizCubica(getFirstNumber(), 7);
+            new RaizCubica(firstNumber, 7);
         } else {
             System.out.println(Kinvalid.invOper);
             continueCalculating();
