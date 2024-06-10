@@ -2,19 +2,8 @@ package ProjetoCalculadora;
 
 import java.util.Scanner;
 
-import ProjetoCalculadora.Constants.CalcConstants;
-import ProjetoCalculadora.Constants.Kinvalid;
-import ProjetoCalculadora.Constants.PercConstants;
-import ProjetoCalculadora.Constants.kObey;
-import ProjetoCalculadora.Operacoes.Divisao;
-import ProjetoCalculadora.Operacoes.Media;
-import ProjetoCalculadora.Operacoes.Multiplicacao;
-import ProjetoCalculadora.Operacoes.Percentage;
-import ProjetoCalculadora.Operacoes.Potencia;
-import ProjetoCalculadora.Operacoes.RaizCubica;
-import ProjetoCalculadora.Operacoes.RaizQuadrada;
-import ProjetoCalculadora.Operacoes.Soma;
-import ProjetoCalculadora.Operacoes.Subtracao;
+import ProjetoCalculadora.Constants.*;
+import ProjetoCalculadora.Operacoes.*;
 
 /**
  * Classe principal da calculadora.
