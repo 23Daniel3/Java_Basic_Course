@@ -7,6 +7,7 @@ import ProjetoCalculadora.Constants.Kinvalid;
 import ProjetoCalculadora.Constants.PercConstants;
 import ProjetoCalculadora.Constants.kObey;
 import ProjetoCalculadora.Operacoes.Divisao;
+import ProjetoCalculadora.Operacoes.Media;
 import ProjetoCalculadora.Operacoes.Multiplicacao;
 import ProjetoCalculadora.Operacoes.Percentage;
 import ProjetoCalculadora.Operacoes.Potencia;
@@ -106,6 +107,8 @@ public class Calculadora {
                 System.out.println(PercConstants.kFirst);
                 new Percentage(firstNumber, 8);
                 break;
+            case "//":
+                new Media(firstNumber, 9);
             default:
                 System.out.println(Kinvalid.invOper);
                 break;

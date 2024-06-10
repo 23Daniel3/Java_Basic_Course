@@ -26,10 +26,10 @@ public class CalculatingBase {
      * se a operação exigir um segundo número.
      * 
      * @param oper O código da operação. As operações que exigem um segundo número são:
-     *             1 (soma), 2 (subtração), 3 (multiplicação), 4 (divisão), 5 (potência) e 8 (porcentagem).
+     *             1 (soma), 2 (subtração), 3 (multiplicação), 4 (divisão), 5 (potência), 8 (porcentagem) e 9 (média).
      */
     public CalculatingBase(int oper){
-        if (oper == 1 || oper == 2 || oper == 3 || oper == 4 || oper == 5){
+        if (oper == 1 || oper == 2 || oper == 3 || oper == 4 || oper == 5 || oper == 9){
             System.out.println(kObey.nmr2Str);
             this.numero2 = scan.nextDouble();
         } else if (oper == 8){

@@ -46,6 +46,16 @@ public final class Constants {
     }
 
     /**
+     * Constantes relacionadas à media de dois números.
+     */
+    public static final class MedConstants {
+        /**
+         * Mensagem de resultado da divisão.
+         */
+        public static final String kStr = "Media dos dois valores: ";
+    }
+
+    /**
      * Constantes relacionadas à operação de raiz quadrada.
      */
     public static final class RQConstants {
@@ -104,7 +114,8 @@ public final class Constants {
                 + "(^) para Potência\n"
                 + "(@) para Raiz Quadrada\n"
                 + "(#) para Raiz cubica\n"
-                + "(%) para descobrir porcentagem\n";
+                + "(%) para descobrir porcentagem\n"
+                + "(//) para descobria a média\n";
 
         /**
          * Mensagem de aviso para a operação de potência.
