@@ -1,4 +1,4 @@
-package MenuUtilidades.Operacoes;
+package MenuUtilidades.Calculadora.Operacoes;
 
 import MenuUtilidades.Constants.RCConstants;
 
@@ -10,6 +10,7 @@ public class RaizCubica extends CalculatingBase {
     double numero1;
 
     /**
+     * 
      * Construtor da classe RaizCubica.
      * 
      * @param firstNumber O número para calcular a raiz cúbica.

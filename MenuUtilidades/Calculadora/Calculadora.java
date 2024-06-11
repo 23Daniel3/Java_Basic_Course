@@ -1,9 +1,9 @@
-package MenuUtilidades;
+package MenuUtilidades.Calculadora;
 
 import java.util.Scanner;
 
+import MenuUtilidades.Calculadora.Operacoes.*;
 import MenuUtilidades.Constants.*;
-import MenuUtilidades.Operacoes.*;
 
 /**
  * Classe principal da calculadora.

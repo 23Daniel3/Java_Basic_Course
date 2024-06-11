@@ -1,4 +1,4 @@
-package MenuUtilidades.Operacoes;
+package MenuUtilidades.Calculadora.Operacoes;
 
 import MenuUtilidades.Constants.RQConstants;
 

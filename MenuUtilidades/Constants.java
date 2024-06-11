@@ -164,6 +164,6 @@ public final class Constants {
         /**
          * Mensagem para perguntar se o usuário deseja continuar calculando.
          */
-        public static final String kCont = "Deseja continuar calculando? digite 'sim' para continuar ou 'menu' para voltarv ao menu";
+        public static final String kCont = "Deseja continuar calculando? digite 'sim' para continuar ou 'menu' para voltar ao menu";
     }
 }
