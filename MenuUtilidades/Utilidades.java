@@ -3,8 +3,10 @@ package MenuUtilidades;
 import java.util.Scanner;
 
 import MenuUtilidades.Calculadora.Calculadora;
-import MenuUtilidades.Trigonometria.Altura;
-import MenuUtilidades.Trigonometria.Hipotenusa;
+import MenuUtilidades.Constants.kUtilidade;
+import MenuUtilidades.Quadrilatero.Area;
+import MenuUtilidades.Triangulo.Altura;
+import MenuUtilidades.Triangulo.Hipotenusa;
 import MenuUtilidades.TurnTo.CelsiusToFahrenheit;
 import MenuUtilidades.TurnTo.FahreinheitToCelsius;
 
@@ -16,32 +18,35 @@ public class Utilidades {
         boolean execute = true;
 
         while (execute) {
-            System.out.println("\n"
-                + "Digite a sua necessidade\n"
-                + "(1) para Calculadora\n"
-                + "(2) para transformar graus celsius em fahrenheit\n"
-                + "(3) para transformar graus fahrenheit em celsius\n"
-                + "(4) para descobrir a hipotenusa entre uma base e altura\n"
-                + "(5) para descobrir a altura entre uma hipotenusa e uma base\n"
-            );
+            System.out.println(kUtilidade.INITIAL_MESSAGE);
 
-            int utilidade = getUtilidade();
+            execute(getUtilidade());
+        }
+    }
 
-            if (utilidade == 1) {
+    private static void execute(int utilidade) {
+        switch (utilidade) {
+            case 1:
                 new Calculadora();
-            } else if (utilidade == 2){
+                break;
+            case 2:
                 new CelsiusToFahrenheit();
-            } else if (utilidade == 3){
+                break;
+            case 3:
                 new FahreinheitToCelsius();
-            } else if (utilidade == 4){
+                break;
+            case 4:
                 new Hipotenusa();
-            } else if (utilidade == 5){
+                break;
+            case 5:
                 new Altura();
-            }
-            
-            else {
+                break;
+            case 6:
+                new Area();
+                break;
+            default:
                 System.out.println("Opção inválida! Tente novamente.");
-            }
+                break;
         }
     }
 

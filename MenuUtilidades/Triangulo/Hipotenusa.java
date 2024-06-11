@@ -1,4 +1,4 @@
-package MenuUtilidades.Trigonometria;
+package MenuUtilidades.Triangulo;
 
 public class Hipotenusa extends TriBase{
 

@@ -1,4 +1,4 @@
-package MenuUtilidades.Trigonometria;
+package MenuUtilidades.Triangulo;
 
 import java.util.Scanner;
 

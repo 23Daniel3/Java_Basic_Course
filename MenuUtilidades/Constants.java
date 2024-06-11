@@ -166,4 +166,16 @@ public final class Constants {
          */
         public static final String kCont = "Deseja continuar calculando? digite 'sim' para continuar ou 'menu' para voltar ao menu";
     }
+
+    public static final class kUtilidade {
+
+        public static final String INITIAL_MESSAGE = "\n"
+                + "Digite a sua necessidade\n"
+                + "(1) para Calculadora\n"
+                + "(2) para transformar graus celsius em fahrenheit\n"
+                + "(3) para transformar graus fahrenheit em celsius\n"
+                + "(4) para descobrir a hipotenusa entre uma base e altura\n"
+                + "(5) para descobrir a altura entre uma hipotenusa e uma base\n"
+                + "(6) para descobrir a área de um quadrilátero\n";
+    }
 }
