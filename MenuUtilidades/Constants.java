@@ -176,6 +176,7 @@ public final class Constants {
                 + "(3) para transformar graus fahrenheit em celsius\n"
                 + "(4) para descobrir a hipotenusa entre uma base e altura\n"
                 + "(5) para descobrir a altura entre uma hipotenusa e uma base\n"
-                + "(6) para descobrir a área de um quadrilátero\n";
+                + "(6) para descobrir a área de um quadrilátero\n"
+                + "(7) para descobrir a área de um triângulo\n";
     }
 }

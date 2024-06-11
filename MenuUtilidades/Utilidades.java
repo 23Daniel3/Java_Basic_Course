@@ -7,6 +7,7 @@ import MenuUtilidades.Constants.kUtilidade;
 import MenuUtilidades.Quadrilatero.Area;
 import MenuUtilidades.Triangulo.Altura;
 import MenuUtilidades.Triangulo.Hipotenusa;
+import MenuUtilidades.Triangulo.TriArea;
 import MenuUtilidades.TurnTo.CelsiusToFahrenheit;
 import MenuUtilidades.TurnTo.FahreinheitToCelsius;
 
@@ -43,6 +44,9 @@ public class Utilidades {
                 break;
             case 6:
                 new Area();
+                break;
+            case 7: 
+                new TriArea();
                 break;
             default:
                 System.out.println("Opção inválida! Tente novamente.");
