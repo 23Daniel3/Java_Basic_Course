@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class TriBase {
 
-    protected double base1;
+    protected double base;
 
      Scanner input = new Scanner(System.in);
 
-    public TriBase(int triOper){
+    public TriBase(){
         System.out.println("Digite a base:");
-        base1 = input.nextDouble();
+        base = input.nextDouble();
     }
 }
