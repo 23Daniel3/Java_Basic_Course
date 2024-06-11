@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.SomaConstants;
+import MenuUtilidades.Constants.SomaConstants;
 
 /**
  * Classe que representa a operação de soma.

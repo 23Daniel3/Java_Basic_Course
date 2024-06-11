@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.PotConstants;
+import MenuUtilidades.Constants.PotConstants;
 
 /**
  * Classe que representa a operação de potência.

@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.DivConstants;
+import MenuUtilidades.Constants.DivConstants;
 
 /**
  * Classe que representa a operação de divisão.

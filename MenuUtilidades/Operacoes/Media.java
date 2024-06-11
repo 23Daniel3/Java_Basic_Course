@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.MedConstants;
+import MenuUtilidades.Constants.MedConstants;
 
 /**
  * Classe que representa o cálculo de média.

@@ -1,7 +1,8 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
 import java.util.Scanner;
-import ProjetoCalculadora.Constants.kObey;
+
+import MenuUtilidades.Constants.kObey;
 
 /**
  * Classe base para operações de cálculo.

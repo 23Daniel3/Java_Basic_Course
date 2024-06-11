@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.RCConstants;
+import MenuUtilidades.Constants.RCConstants;
 
 /**
  * Classe que representa a operação de raiz cúbica.

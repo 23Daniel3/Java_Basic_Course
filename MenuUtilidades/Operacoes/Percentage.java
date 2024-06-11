@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.PercConstants;
+import MenuUtilidades.Constants.PercConstants;
 
 /**
  * Classe que representa a operação de porcentagem.

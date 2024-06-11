@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.MultConstants;
+import MenuUtilidades.Constants.MultConstants;
 
 /**
  * Classe que representa a operação de multiplicação.

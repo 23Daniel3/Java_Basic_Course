@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.SubtConstants;
+import MenuUtilidades.Constants.SubtConstants;
 
 /**
  * Classe que representa a operação de subtração.

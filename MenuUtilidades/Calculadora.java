@@ -1,9 +1,9 @@
-package ProjetoCalculadora;
+package MenuUtilidades;
 
 import java.util.Scanner;
 
-import ProjetoCalculadora.Constants.*;
-import ProjetoCalculadora.Operacoes.*;
+import MenuUtilidades.Constants.*;
+import MenuUtilidades.Operacoes.*;
 
 /**
  * Classe principal da calculadora.
@@ -14,20 +14,11 @@ public class Calculadora {
     static Scanner input = new Scanner(System.in);
     private static double firstNumber;
 
-    /**
-     * Método principal que inicia a execução do programa.
-     *
-     * @param args Argumentos de linha de comando (não utilizados).
-     */
-    public static void main(String[] args) {
-        boolean continuar = true;
-
-        while (continuar) {
+    public Calculadora(){
+    
             firstNumber = getFirstNumber();
             String operacao = getOperacao();
             execute(operacao);
-            continuar = continueCalculating();
-        }
     }
 
     /**
@@ -50,16 +41,6 @@ public class Calculadora {
         return input.next();
     }
 
-    /**
-     * Solicita ao usuário se deseja continuar calculando.
-     *
-     * @return {@code true} se o usuário desejar continuar, {@code false} caso contrário.
-     */
-    private static boolean continueCalculating() {
-        System.out.println(kObey.kCont);
-        String resposta = input.next();
-        return resposta.equalsIgnoreCase("sim");
-    }
 
     /**
      * Executa a operação desejada com base na entrada do usuário.

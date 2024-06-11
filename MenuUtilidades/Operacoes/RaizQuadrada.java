@@ -1,6 +1,6 @@
-package ProjetoCalculadora.Operacoes;
+package MenuUtilidades.Operacoes;
 
-import ProjetoCalculadora.Constants.RQConstants;
+import MenuUtilidades.Constants.RQConstants;
 
 /**
  * Classe que representa a operação de raiz quadrada.

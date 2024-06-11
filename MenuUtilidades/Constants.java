@@ -1,4 +1,4 @@
-package ProjetoCalculadora;
+package MenuUtilidades;
 
 /**
  * Classe que contém todas as constantes usadas na calculadora.
@@ -164,6 +164,6 @@ public final class Constants {
         /**
          * Mensagem para perguntar se o usuário deseja continuar calculando.
          */
-        public static final String kCont = "Deseja continuar calculando? digite 'sim' para continuar";
+        public static final String kCont = "Deseja continuar calculando? digite 'sim' para continuar ou 'menu' para voltarv ao menu";
     }
 }
