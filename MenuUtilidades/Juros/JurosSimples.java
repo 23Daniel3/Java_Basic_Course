@@ -15,7 +15,7 @@ public class JurosSimples {
     private static double capital;
 
     public JurosSimples(){
-        System.out.println(kJuros.MESSAGE);
+        System.out.println(kJuros.SIMPLE_MESSAGE);
         execute(getUtilidade());
     }
 

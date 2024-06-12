@@ -183,11 +183,15 @@ public final class Constants {
 
     public static final class kJuros {
 
-        public static final String MESSAGE = "\n"
+        public static final String SIMPLE_MESSAGE = "\n"
             + "Digite o que quer descobrir\n"
             + "(1) para juros\n"
             + "(2) para tempo\n"
             + "(3) para taxa\n"
             + "(4) para capital\n";
+
+        public static final String COMPOST_MESSAGE = "\n"
+            + "Digite o que quer descobrir\n"
+            + "(1) para montante final (se não tiver aportes mensais, apenas digitar '0' no valor mensal)\n";
     }
 }

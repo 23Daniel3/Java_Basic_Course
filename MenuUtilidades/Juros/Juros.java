@@ -26,7 +26,7 @@ public class Juros {
     private static void execute(int calc) {
         switch (calc) {
             case 1:
-                ///wdd
+                new JurosCompostos();
                 break;
             case 2:
                 new JurosSimples();
