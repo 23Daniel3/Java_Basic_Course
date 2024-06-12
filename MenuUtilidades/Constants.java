@@ -192,6 +192,8 @@ public final class Constants {
 
         public static final String COMPOST_MESSAGE = "\n"
             + "Digite o que quer descobrir\n"
-            + "(1) para montante final (se não tiver aportes mensais, apenas digitar '0' no valor mensal)\n";
+            + "(1) para montante final (se não tiver aportes mensais, apenas digitar '0' no valor mensal)\n"
+            + "(2) para capital\n"
+            + "(3) para taxa\n";
     }
 }

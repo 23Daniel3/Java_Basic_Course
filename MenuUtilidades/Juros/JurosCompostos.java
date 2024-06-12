@@ -3,6 +3,8 @@ package MenuUtilidades.Juros;
 import java.util.Scanner;
 
 import MenuUtilidades.Constants.*;
+import MenuUtilidades.Juros.Compostos.CompCapital;
+import MenuUtilidades.Juros.Compostos.CompTaxa;
 import MenuUtilidades.Juros.Compostos.Montante;
 
 public class JurosCompostos {
@@ -13,6 +15,7 @@ public class JurosCompostos {
     private static double taxa;
     private static double capital;
     private static double valorMensal;
+    private static double montante;
 
     public JurosCompostos(){
         System.out.println(kJuros.COMPOST_MESSAGE);
@@ -23,6 +26,12 @@ public class JurosCompostos {
         switch (type) {
             case 1:
                 new Montante();
+                break;
+            case 2:
+                new CompCapital();
+                break;
+            case 3:
+                new CompTaxa();
                 break;
             default:
                 System.out.println(Kinvalid.invOper);
@@ -52,6 +61,12 @@ public class JurosCompostos {
         System.out.println("digite o valor mensal");
         valorMensal = input.nextDouble();
         return valorMensal;
+    }
+
+    public static double getMontante(){
+        System.out.println("digite o montante");
+        montante = input.nextDouble();
+        return montante;
     }
 
     private int getUtilidade(){
