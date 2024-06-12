@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import MenuUtilidades.Calculadora.Calculadora;
 import MenuUtilidades.Constants.kUtilidade;
+import MenuUtilidades.Juros.Juros;
 import MenuUtilidades.Quadrilatero.Area;
 import MenuUtilidades.Triangulo.Altura;
 import MenuUtilidades.Triangulo.Hipotenusa;
@@ -47,6 +48,9 @@ public class Utilidades {
                 break;
             case 7: 
                 new TriArea();
+                break;
+            case 8:
+                new Juros();
                 break;
             default:
                 System.out.println("Opção inválida! Tente novamente.");

@@ -177,6 +177,17 @@ public final class Constants {
                 + "(4) para descobrir a hipotenusa entre uma base e altura\n"
                 + "(5) para descobrir a altura entre uma hipotenusa e uma base\n"
                 + "(6) para descobrir a área de um quadrilátero\n"
-                + "(7) para descobrir a área de um triângulo\n";
+                + "(7) para descobrir a área de um triângulo\n"
+                + "(8) para calcular juros\n";
+    }
+
+    public static final class kJuros {
+
+        public static final String MESSAGE = "\n"
+            + "Digite o que quer descobrir\n"
+            + "(1) para juros\n"
+            + "(2) para tempo\n"
+            + "(3) para taxa\n"
+            + "(4) para capital\n";
     }
 }
