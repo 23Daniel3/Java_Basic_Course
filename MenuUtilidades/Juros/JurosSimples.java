@@ -2,19 +2,17 @@ package MenuUtilidades.Juros;
 
 import java.util.Scanner;
 
-import MenuUtilidades.Constants.Kinvalid;
-import MenuUtilidades.Constants.kJuros;
+import MenuUtilidades.Constants.*;
+import MenuUtilidades.Juros.Simples.*;
 
 public class JurosSimples {
 
-    Scanner input = new Scanner(System.in);
+    private static Scanner input = new Scanner(System.in);
 
-    private double juros;
-    private double tempo;
-    private double taxa;
-    private double capital;
-
-    private double result;
+    private static double juros;
+    private static double tempo;
+    private static double taxa;
+    private static double capital;
 
     public JurosSimples(){
         System.out.println(kJuros.MESSAGE);
@@ -24,76 +22,45 @@ public class JurosSimples {
     private void execute(int type){
         switch (type) {
             case 1:
-            Juros();
+            new SimpleJuros();
                 break;
             case 2:
-                Tempo();
+                new SimpleTempo();
                 break;
             case 3:
-                Taxa();
+                new SimpleTaxa();
                 break;
             case 4:
-                Capital();
+                new SimpleCapital();
                 break;
             default:
                 System.out.println(Kinvalid.invOper);
                 break;
         }
     }
-    private void Juros(){
-        getCapital();
-        getTaxa();
-        getTempo();
 
-        result = taxa * capital * tempo / 100;
-        System.out.println("Os juros são: " + result);
-    }
-
-    private void Tempo(){
-        getCapital();
-        getTaxa();
-        getJuros();
-
-        result = (juros * 100) / (capital * taxa);
-        System.out.println("O tempo é: " + result + " na grandeza de tempo da taxa");
-    }
-
-    private void Taxa(){
-        getCapital();
-        getTempo();
-        getJuros();
-
-        result = (juros * 100) / (capital * tempo);
-        System.out.println("A taxa é: " + result + " % na grandeza do tempo");
-    }
-
-    private void Capital(){
-        getTaxa();
-        getTempo();
-        getJuros();
-
-        result = (juros * 100) / (taxa * tempo);
-        System.out.println("O capital é: " + result);
-    }
-
-    private void getJuros(){
+    public static double getJuros(){
         System.out.println("digite os juros");
         juros = input.nextDouble();
+        return juros;
     }
 
-    private void getTempo(){
+    public static double getTempo(){
         System.out.println("digite o tempo (na mesma grandeza da taxa 'mês ou ano')");
         tempo = input.nextDouble();
+        return tempo;
     }
 
-    private void getTaxa(){
+    public static double getTaxa(){
         System.out.println("digite a taxa");
         taxa = input.nextDouble();
+        return taxa;
     }
 
-    private void getCapital(){
+    public static double getCapital(){
         System.out.println("digite o Capital");
         capital = input.nextDouble();
+        return capital;
     }
 
     private int getUtilidade(){

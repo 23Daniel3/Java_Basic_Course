@@ -2,6 +2,8 @@ package MenuUtilidades.Juros;
 
 import java.util.Scanner;
 
+import MenuUtilidades.Constants.Kinvalid;
+
 public class Juros {
 
     static Scanner input = new Scanner(System.in);
@@ -30,7 +32,7 @@ public class Juros {
                 new JurosSimples();
                 break;
             default:
-                //dd
+                System.out.println(Kinvalid.invOper);
                 break;
         }
     }
