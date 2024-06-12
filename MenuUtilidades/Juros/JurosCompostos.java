@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import MenuUtilidades.Constants.*;
 import MenuUtilidades.Juros.Compostos.CompCapital;
+import MenuUtilidades.Juros.Compostos.CompPeriodo;
 import MenuUtilidades.Juros.Compostos.CompTaxa;
 import MenuUtilidades.Juros.Compostos.Montante;
 
@@ -32,6 +33,9 @@ public class JurosCompostos {
                 break;
             case 3:
                 new CompTaxa();
+                break;
+            case 4:
+                new CompPeriodo();
                 break;
             default:
                 System.out.println(Kinvalid.invOper);
